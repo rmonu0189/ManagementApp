@@ -525,7 +525,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				ONLY_ACTIVE_ARCH = YES;
-				PROVISIONING_PROFILE = "eec7d2dd-9eca-429b-9d98-1499b4951cb9";
+				PROVISIONING_PROFILE = "fb6ccf41-0914-497c-898b-4a341f754c7d";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -558,7 +558,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				PROVISIONING_PROFILE = "eec7d2dd-9eca-429b-9d98-1499b4951cb9";
+				PROVISIONING_PROFILE = "fb6ccf41-0914-497c-898b-4a341f754c7d";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -574,7 +574,7 @@
 				GCC_PREFIX_HEADER = "Insurance/Insurance-Prefix.pch";
 				INFOPLIST_FILE = "Insurance/Insurance-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "eec7d2dd-9eca-429b-9d98-1499b4951cb9";
+				PROVISIONING_PROFILE = "fb6ccf41-0914-497c-898b-4a341f754c7d";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -589,7 +589,7 @@
 				GCC_PREFIX_HEADER = "Insurance/Insurance-Prefix.pch";
 				INFOPLIST_FILE = "Insurance/Insurance-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "eec7d2dd-9eca-429b-9d98-1499b4951cb9";
+				PROVISIONING_PROFILE = "fb6ccf41-0914-497c-898b-4a341f754c7d";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
