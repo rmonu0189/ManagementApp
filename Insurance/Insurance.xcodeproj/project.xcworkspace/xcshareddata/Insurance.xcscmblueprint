@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "4F1AB0A310957D82187718BC768F8DE104EAFD48",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "bc292187-4652-424f-b7f1-ee4c49d5ef79++9919" : 0,
+    "4F1AB0A310957D82187718BC768F8DE104EAFD48" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "8F81F48F-BB0D-458A-9826-FF50759FE73E",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "bc292187-4652-424f-b7f1-ee4c49d5ef79++9919" : "",
+    "4F1AB0A310957D82187718BC768F8DE104EAFD48" : "Management"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Insurance",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Insurance\/Insurance.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/bitbucket.org\/monu90747\/management.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "4F1AB0A310957D82187718BC768F8DE104EAFD48"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/subversion.assembla.com\/svn\/commonspace",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "bc292187-4652-424f-b7f1-ee4c49d5ef79++9919"
+    }
+  ]
+}
