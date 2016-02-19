@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import <HockeySDK/HockeySDK.h>
 
 @implementation AppDelegate
 
@@ -16,6 +17,12 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    
+    //-- Crash Reporting by Hockey App
+    [[BITHockeyManager sharedHockeyManager] configureWithIdentifier:@"91c14f99ca9d4da889b9f766e95b4963"];
+    [[BITHockeyManager sharedHockeyManager].crashManager setCrashManagerStatus: BITCrashManagerStatusAutoSend];
+    [[BITHockeyManager sharedHockeyManager] startManager];
+    
     //-- Initialize loading view
     self.loadingView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 50, 50)];
     self.indicator = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhite];

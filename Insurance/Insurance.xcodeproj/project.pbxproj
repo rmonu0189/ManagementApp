@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F3E665041C75D51900CCEEC5 /* HockeySDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3E665031C75D51900CCEEC5 /* HockeySDK.framework */; };
 		FA01726A1AB89FC900023B04 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA0172691AB89FC900023B04 /* Foundation.framework */; };
 		FA01726C1AB89FC900023B04 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA01726B1AB89FC900023B04 /* CoreGraphics.framework */; };
 		FA01726E1AB89FC900023B04 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA01726D1AB89FC900023B04 /* UIKit.framework */; };
@@ -73,6 +74,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F3E665031C75D51900CCEEC5 /* HockeySDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = HockeySDK.framework; sourceTree = "<group>"; };
 		FA0172661AB89FC900023B04 /* Insurance.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Insurance.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA0172691AB89FC900023B04 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		FA01726B1AB89FC900023B04 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -160,6 +162,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3E665041C75D51900CCEEC5 /* HockeySDK.framework in Frameworks */,
 				FA01726C1AB89FC900023B04 /* CoreGraphics.framework in Frameworks */,
 				FA01726E1AB89FC900023B04 /* UIKit.framework in Frameworks */,
 				FA01726A1AB89FC900023B04 /* Foundation.framework in Frameworks */,
@@ -169,6 +172,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F3E665021C75D51900CCEEC5 /* HockeySDKCrashOnly */ = {
+			isa = PBXGroup;
+			children = (
+				F3E665031C75D51900CCEEC5 /* HockeySDK.framework */,
+			);
+			path = HockeySDKCrashOnly;
+			sourceTree = "<group>";
+		};
 		FA01725D1AB89FC800023B04 = {
 			isa = PBXGroup;
 			children = (
@@ -189,6 +200,7 @@
 		FA0172681AB89FC900023B04 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F3E665021C75D51900CCEEC5 /* HockeySDKCrashOnly */,
 				FA0172691AB89FC900023B04 /* Foundation.framework */,
 				FA01726B1AB89FC900023B04 /* CoreGraphics.framework */,
 				FA01726D1AB89FC900023B04 /* UIKit.framework */,
@@ -371,6 +383,11 @@
 			attributes = {
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = Monoo;
+				TargetAttributes = {
+					FA0172651AB89FC900023B04 = {
+						DevelopmentTeam = QQTRBU5ANE;
+					};
+				};
 			};
 			buildConfigurationList = FA0172611AB89FC800023B04 /* Build configuration list for PBXProject "Insurance" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -525,7 +542,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				ONLY_ACTIVE_ARCH = YES;
-				PROVISIONING_PROFILE = "fb6ccf41-0914-497c-898b-4a341f754c7d";
+				PROVISIONING_PROFILE = "d1ef6c58-7e41-447f-8014-082e544d7bb6";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -558,7 +575,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				PROVISIONING_PROFILE = "fb6ccf41-0914-497c-898b-4a341f754c7d";
+				PROVISIONING_PROFILE = "d1ef6c58-7e41-447f-8014-082e544d7bb6";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -570,11 +587,16 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer: Grant Joiner (T42P86TFAJ)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Grant Joiner (T42P86TFAJ)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/HockeySDKCrashOnly",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Insurance/Insurance-Prefix.pch";
 				INFOPLIST_FILE = "Insurance/Insurance-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "fb6ccf41-0914-497c-898b-4a341f754c7d";
+				PROVISIONING_PROFILE = "1ccbfadb-cb48-46f2-b1d2-bb81fd9fe770";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -585,11 +607,16 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer: Grant Joiner (T42P86TFAJ)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Grant Joiner (T42P86TFAJ)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/HockeySDKCrashOnly",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Insurance/Insurance-Prefix.pch";
 				INFOPLIST_FILE = "Insurance/Insurance-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "fb6ccf41-0914-497c-898b-4a341f754c7d";
+				PROVISIONING_PROFILE = "1ccbfadb-cb48-46f2-b1d2-bb81fd9fe770";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
